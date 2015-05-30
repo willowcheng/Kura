@@ -1,0 +1,26 @@
+INDEX VERSION 1.127+/Users/willowcheng/Development/Eclipse/Kura/.metadata/.plugins/org.eclipse.jdt.core
+2224132415.index
+4203641536.index
+3954040986.index
+765977872.index
+1861794338.index
+3238884483.index
+1776082188.index
+2290259260.index
+2491330409.index
+450555687.index
+3348237447.index
+2368672752.index
+1180666039.index
+3004609673.index
+173321862.index
+770573466.index
+272178059.index
+3196508605.index
+39996186.index
+2201399.index
+2326659272.index
+4249315662.index
+1028920786.index
+3217149373.index
+84777399.index

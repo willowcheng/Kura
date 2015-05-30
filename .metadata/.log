@@ -1,0 +1,25 @@
+!SESSION 2015-05-30 17:20:41.485 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/willowcheng/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data /Users/willowcheng/Development/Eclipse/Kura -product org.eclipse.epp.package.jee.product -keyring /Users/willowcheng/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.pde.build 4 5 2015-05-30 17:44:49.135
+!MESSAGE Processing inclusion from feature org.eclipse.pde.container.feature: Bundle org.eclipse.kura.example.hello_osgi_1.0.0.qualifier failed to resolve.:
+	Missing Constraint: Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+	Host plug-in JavaSE_0.0.0 has not been found.
+
+
+!ENTRY org.eclipse.pde.build 4 5 2015-05-30 17:46:04.310
+!MESSAGE Processing inclusion from feature org.eclipse.pde.container.feature: Bundle org.eclipse.kura.example.hello_osgi_1.0.0.qualifier failed to resolve.:
+	Missing Constraint: Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+	Host plug-in JavaSE_0.0.0 has not been found.
+
+
+!ENTRY org.eclipse.pde.build 4 5 2015-05-30 17:54:30.716
+!MESSAGE Processing inclusion from feature org.eclipse.pde.container.feature: Bundle org.eclipse.kura.example.hello_osgi_1.0.0.qualifier failed to resolve.:
+	Missing Constraint: Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+	Host plug-in JavaSE_0.0.0 has not been found.
+
