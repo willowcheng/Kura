@@ -1,0 +1,9 @@
+output.. = bin/
+bin.includes = META-INF/,\
+               .,\
+               OSGI-INF/
+source.. = src/
+additional.bundles = org.eclipse.osgi.services,\
+                     slf4j.api,\
+                     jdk.dio
+jars.extra.classpath = lib/jdk.dio_1.0.1.jar

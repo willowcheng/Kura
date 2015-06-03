@@ -1,0 +1,48 @@
+package org.eclipse.kura.example.hello_osgi;
+
+import java.io.IOException;
+
+import jdk.dio.DeviceManager;
+import jdk.dio.DeviceNotFoundException;
+import jdk.dio.UnavailableDeviceException;
+import jdk.dio.gpio.GPIOPin;
+
+import org.osgi.service.component.ComponentContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class HelloOsgi {
+
+    private static final Logger s_logger = LoggerFactory.getLogger(HelloOsgi.class);
+
+    private static final String APP_ID = "org.eclipse.kura.example.hello_osgi";
+
+    protected void activate(ComponentContext componentContext) throws DeviceNotFoundException, UnavailableDeviceException, IOException {
+
+        s_logger.info("Bundle " + APP_ID + " has started!");
+
+        s_logger.debug(APP_ID + ": This is a debug message.");
+        
+        //Accessing the GPIO Pin number 17. De default behavioue is defined in the
+        //jdk.dio.properties file
+        //
+        //i.e.:
+        // gpio.GPIOPin = initValue:0, deviceNumber:0, direction:3, mode:-1, trigger:3
+        // 17 = deviceType: gpio.GPIOPin, pinNumber:17, name:GPIO_USER_1
+
+        GPIOPin led = (GPIOPin)DeviceManager.open(17);
+
+        led.setValue(true); //Turns the LED on
+        // led.setValue(false); //Turns the LED off
+        boolean status = led.getValue(); //true if the LED is on
+        s_logger.debug(APP_ID + ": Light turns on, " + status); 
+
+    }
+
+    protected void deactivate(ComponentContext componentContext) {
+
+        s_logger.info("Bundle " + APP_ID + " has stopped!");
+
+    }
+
+}

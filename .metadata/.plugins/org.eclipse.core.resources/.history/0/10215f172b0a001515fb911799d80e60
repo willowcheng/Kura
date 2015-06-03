@@ -1,0 +1,9 @@
+#Deployment Plugin Project File
+#Wed Jun 03 15:59:27 EDT 2015
+bundles.count=0
+certificates.count=0
+general.signbundles=false
+headers.other.headers=
+headers.symbolic.name=hello_osgi_2
+headers.version=1.0.0
+resources.count=0

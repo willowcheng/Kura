@@ -1,0 +1,5 @@
+package org.eclipse.kura.example.configurable;
+
+public class ConfigurableExample {
+
+}
